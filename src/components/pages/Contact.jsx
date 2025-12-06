@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Contact() {
+function Contact() {
   const [status, setStatus] = useState("");
 
   const handleSubmit = async (event) => {
@@ -33,63 +33,82 @@ export default function Contact() {
         </p>
 
         {/* CONTACT FORM */}
-        <form onSubmit={handleSubmit} className="space-y-4 bg-gray-50 p-6 rounded-xl shadow-lg">
-          <div>
-            <label className="block text-gray-700 font-semibold">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              required
-              className="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
-            />
-          </div>
+        <form
+  onSubmit={handleSubmit}
+  className="space-y-4 p-8 rounded-2xl shadow-4xl text-white relative overflow-hidden"
+  style={{
+    backgroundImage:
+      "url('https://res.cloudinary.com/djwiqbwef/image/upload/v1765031406/frontAudi_idifga.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-black/10 backdrop-blur-xs"></div>
 
-          <div>
-            <label className="block text-gray-700 font-semibold">Email</label>
-            <input
-              type="email"
-              name="email"
-              required
-              className="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
-            />
-          </div>
+  {/* Content */}
+  <div className="relative z-10 space-y-4">
+    <div>
+      <label className="block font-semibold">Full Name</label>
+      <input
+        type="text"
+        name="name"
+        required
+        placeholder="Your Name"
+        className="w-full p-3 mt-1 rounded-lg bg-white/20 placeholder-gray-200 text-white border-white/50 focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
+      />
+    </div>
 
-          <div>
-            <label className="block text-gray-700 font-semibold">Phone</label>
-            <input
-              type="tel"
-              name="phone"
-              required
-              className="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
-            />
-          </div>
+    <div>
+      <label className="block font-semibold">Email</label>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder="email@example.com"
+        className="w-full p-3 mt-1 rounded-lg bg-white/20 placeholder-gray-200 text-white border-white/50 focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
+      />
+    </div>
 
-          <div>
-            <label className="block text-gray-700 font-semibold">Message</label>
-            <textarea
-              name="message"
-              rows="5"
-              required
-              className="w-full p-3 mt-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
-            ></textarea>
-          </div>
+    <div>
+      <label className="block font-semibold">Phone</label>
+      <input
+        type="tel"
+        name="phone"
+        required
+        placeholder="Phone Number"
+        className="w-full p-3 mt-1 rounded-lg bg-white/20 placeholder-gray-200 text-white border-white/50 focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
+      />
+    </div>
 
-          <button
-            type="submit"
-            className="bg-[#0E9F6E] w-full py-3 text-white rounded-xl font-semibold hover:bg-green-700"
-          >
-            Send Message
-          </button>
+    <div>
+      <label className="block font-semibold">Message</label>
+      <textarea
+        name="message"
+        rows="5"
+        required
+        placeholder="How can we help you?"
+        className="w-full p-3 mt-1 rounded-lg bg-white/20 placeholder-gray-200 text-white border-white/50 focus:outline-none focus:ring-2 focus:ring-[#0E9F6E]"
+      ></textarea>
+    </div>
 
-          {status && (
-            <p className="text-center text-sm font-semibold mt-2 text-[#0A2A43]">
-              {status}
-            </p>
-          )}
-        </form>
+    <button
+      type="submit"
+      className="bg-[#0E9F6E] w-full py-3 rounded-xl font-semibold hover:bg-green-700 transition"
+    >
+      Send Message
+    </button>
+
+    {status && (
+      <p className="text-center text-sm font-semibold mt-2 text-[#0E9F6E]">
+        {status}
+      </p>
+    )}
+  </div>
+</form>
 
         {/* CONTACT DETAILS */}
-        <div className="mt-10 text-gray-700">
+        <div className=" text-2xl mt-10 text-gray-700">
           <p><strong>Phone:</strong> <a href="tel:+61468123456" className="text-[#0E9F6E]">+61 468123456</a></p>
           <p><strong>Service Area:</strong> Adelaide & nearby suburbs</p>
           <p><strong>Hours:</strong> Mon–Sat | 8AM – 8PM</p>
@@ -99,3 +118,5 @@ export default function Contact() {
     </div>
   );
 }
+
+export default Contact

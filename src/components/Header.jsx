@@ -5,7 +5,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo Placeholder */}
         <div className="flex items-center gap-2">
-          <span className="text-[#0E9F6E] text-3xl">🚗</span>
+          
           <h1 className="text-2xl font-bold text-[#0A2A43]">
             APD Driving School
           </h1>
