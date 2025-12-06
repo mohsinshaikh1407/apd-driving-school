@@ -23,12 +23,12 @@ function Contact() {
   };
 
   return (
-    <div className="pt-28 pb-20 bg-white">
+    <div className="my-20 pt-28 pb-20 bg-white">
       <div className="container mx-auto px-6 max-w-2xl">
-        <h1 className="text-4xl font-extrabold text-[#0A2A43] mb-4">
+        <h1 className="text-4xl font-extrabold text-[#021e03] mb-4">
           Contact Us
         </h1>
-        <p className="text-gray-600 mb-6">
+        <p className="text-xl text-green-800 mb-6">
           Have questions? Need a booking? Send us a message and we’ll reply ASAP.
         </p>
 
@@ -109,9 +109,9 @@ function Contact() {
 
         {/* CONTACT DETAILS */}
         <div className=" text-2xl mt-10 text-gray-700">
-          <p><strong>Phone:</strong> <a href="tel:+61468123456" className="text-[#0E9F6E]">+61 468123456</a></p>
+          <p><strong>Phone:</strong> <a href="tel:61449955552" className="text-[#0E9F6E]">0449 955 552</a></p>
           <p><strong>Service Area:</strong> Adelaide & nearby suburbs</p>
-          <p><strong>Hours:</strong> Mon–Sat | 8AM – 8PM</p>
+          <p><strong>Hours:</strong> Mon–Fri | 8AM – 5PM</p>
         </div>
 
       </div>

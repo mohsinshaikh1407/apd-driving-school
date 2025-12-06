@@ -1,7 +1,7 @@
 
 export default function Services() {
   return (
-    <div className="pt-24 pb-20 text-[#0A2A43]">
+    <div className="my-10 pt-24 pb-20 text-[#0A2A43]">
 
       {/* Driving Lessons Tailored */}
       <section className="bg-gray-50 py-16">

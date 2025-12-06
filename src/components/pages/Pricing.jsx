@@ -4,15 +4,15 @@ export default function Pricing() {
   return (
     <>
     
-    <div className="pt-24 pb-24 bg-gray-100 px-4">
+    <div className="my-20 pt-24 pb-24 bg-gray-100 px-4">
       <div className="text-center mb-12">
         
-        <h1 className="text-4xl font-extrabold text-[#0A2A43]">    
+        <h1 className="my-5 text-4xl font-extrabold text-[#0A2A43]">    
           Ready to Start Your Driving Journey?
         </h1>
-        <h1 className="text-4xl font-extrabold text-[#0A2A43]">    
+        <h3 className="text-2xl font-extrabold text-[#0A2A43]">    
           Book your first lesson today and take the first step towards driving independence
-      </h1>
+      </h3>
       </div>
 
             
@@ -105,7 +105,7 @@ export default function Pricing() {
           ]}
         />
       </div>
-      <h3 className="text align-middle text-lg font-extrabold text-[#0A2A43]">    
+      <h3 className="text-lg font-extrabold text-[#0A2A43]">    
           *Transparent Pricing & Packages
         </h3>
         <h3 className="text-lg font-extrabold text-[#0A2A43]">

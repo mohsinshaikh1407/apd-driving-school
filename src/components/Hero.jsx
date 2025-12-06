@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-[#0A2A43] text-white pt-28 pb-20">
+    <section className="my-20 bg-[#0A2A43] text-white pt-28 pb-20">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
         {/* Left Content */}
         <div className="flex-1">
